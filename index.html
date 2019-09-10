@@ -1,36 +1,60 @@
----
-layout: default
-title: Home
----
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>Posts</span></h2>
-
-    </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <hedaer class="header">
+      <h1 class="logo">blog name</h1>
+    </hedaer>
+    <main class="main">
+      <section class="post-section">
+        <ul class="post-list">
+          <li class="post-item"><a class="post-link" href="#1"><img class="post-img" src="https://via.placeholder.com/30" alt="profile"><span class="post-author">author name</span>
+              <h2 class="post-title">post name</h2></a></li>
+          <li class="post-item"><a class="post-link" href="#1"><img class="post-img" src="https://via.placeholder.com/30" alt="profile"><span class="post-author">author name</span>
+              <h2 class="post-title">post name</h2></a></li>
+          <li class="post-item"><a class="post-link" href="#1"><img class="post-img" src="https://via.placeholder.com/30" alt="profile"><span class="post-author">author name</span>
+              <h2 class="post-title">post name</h2></a></li>
+          <li class="post-item"><a class="post-link" href="#1"><img class="post-img" src="https://via.placeholder.com/30" alt="profile"><span class="post-author">author name</span>
+              <h2 class="post-title">post name</h2></a></li>
+        </ul>
+      </section>
+      <section class="team-section">
+        <h1 class="team-title">The Team</h1>
+        <ul class="team-list">
+          <li class="member-item"><img class="member-img" src="https://via.placeholder.com/190x260" alt="profile"><img class="member-gif" src="https://via.placeholder.com/190x260" alt="profile">
+            <h4 class="member-name">Cindy</h4>
+            <p class="member-desc">FE Developer</p>
+          </li>
+          <li class="member-item"><img class="member-img" src="https://via.placeholder.com/190x260" alt="profile"><img class="member-gif" src="https://via.placeholder.com/190x260" alt="profile">
+            <h4 class="member-name">Cindy</h4>
+            <p class="member-desc">FE Developer</p>
+          </li>
+          <li class="member-item"><img class="member-img" src="https://via.placeholder.com/190x260" alt="profile"><img class="member-gif" src="https://via.placeholder.com/190x260" alt="profile">
+            <h4 class="member-name">Cindy</h4>
+            <p class="member-desc">FE Developer</p>
+          </li>
+          <li class="member-item"><img class="member-img" src="https://via.placeholder.com/190x260" alt="profile"><img class="member-gif" src="https://via.placeholder.com/190x260" alt="profile">
+            <h4 class="member-name">Cindy</h4>
+            <p class="member-desc">FE Developer</p>
+          </li>
+          <li class="member-item"><img class="member-img" src="https://via.placeholder.com/190x260" alt="profile"><img class="member-gif" src="https://via.placeholder.com/190x260" alt="profile">
+            <h4 class="member-name">Cindy</h4>
+            <p class="member-desc">FE Developer</p>
+          </li>
+          <li class="member-item"><img class="member-img" src="https://via.placeholder.com/190x260" alt="profile"><img class="member-gif" src="https://via.placeholder.com/190x260" alt="profile">
+            <h4 class="member-name">Cindy</h4>
+            <p class="member-desc">FE Developer</p>
+          </li>
+          <li class="member-item"><img class="member-img" src="https://via.placeholder.com/190x260" alt="profile"><img class="member-gif" src="https://via.placeholder.com/190x260" alt="profile">
+            <h4 class="member-name">Cindy</h4>
+            <p class="member-desc">FE Developer</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer"><span class="copyright">COPYRIGHT ©2019 MADUP INC. ALL RIGHT RESERVED.</span></footer>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "madtech",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "path": "^0.12.7"
+  }
+}
