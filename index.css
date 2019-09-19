@@ -61,7 +61,21 @@ ul {
   align-items: center;
   width: 25%;
 }
+.member-profile {
+  width: 11.2em;
+  height: 100%;
+  background: url("https://via.placeholder.com/190x260") no-repeat center;
+}
+.member-profile:hover {
+  background: url("https://via.placeholder.com/190x260/FFFF00/00000") no-repeat center;
+}
 .member-gif {
+  display: none;
+}
+.member-gif:hover {
+  display: block;
+}
+.member-img:hover {
   display: none;
 }
 .footer {
