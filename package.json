@@ -3,10 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "concurrently --kill-others \"npm run serv\" \"npm run dev-pug\" \"npm run dev-stylus\"",
+    "serv": "live-server",
+    "dev-pug": "pug ./ -o ./ -w -P",
+    "dev-stylus": "stylus ./ -o ./ -w"
   },
   "dependencies": {
+    "concurrently": "^4.1.2",
     "live-server": "^1.2.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "stylus": "^0.54.7"
   }
 }
