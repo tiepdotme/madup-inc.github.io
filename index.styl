@@ -59,10 +59,22 @@ ul
 
 .member
   &-item
+    position relative
     display flex
     flex-direction column
     align-items center
     width 25%
+
+    .member-img,
+    .member-gif
+      transition opacity 0.3s ease-in-out
+
+    &:hover
+      .member-img
+        opacity 0
+
+      .member-gif
+        opacity 1
 
   &-profile
     width 11.2em
@@ -73,13 +85,11 @@ ul
       background url("https://via.placeholder.com/190x260/FFFF00/00000") no-repeat center
 
   &-gif
-    display none
-
-    &:hover
-      display block
-
-  &-img:hover
-    display none
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    top 0
+    opacity 0
 
 //&-name
 
