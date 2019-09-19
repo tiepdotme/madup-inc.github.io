@@ -88,13 +88,11 @@ ul {
   opacity: 0;
 }
 .thumbnail {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   background: url("https://via.placeholder.com/1800x260") no-repeat center;
   background-size: 100% 100%;
+  margin-left: calc((100vw - 80em) / -2);
 }
 .footer {
   background: #add8e6;
